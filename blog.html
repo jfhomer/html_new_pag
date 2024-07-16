@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>one piece</title>
+    <style>
+            body{
+            font-family: sans-serif;
+            background-color: #ddb364;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            perspective: 800px;
+        }
+        .contenedor{
+            width: 1200px;
+            height: 200px;
+            background-color: rgb(43, 223, 82);
+            border-radius: 150px;
+            height: 20vh;
+            margin: 3%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            transform-style: preserve-3d;
+        }
+        .imagen-izquierda {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-65%);
+            animation: moverDerecha 20s linear infinite;
+        }
+        @keyframes moverDerecha {
+            0%{
+                left: -150px;
+                opacity: 1;
+            }
+            50%{
+                left: calc(100%);
+                opacity: 1;
+            }
+            100%{
+                left: calc(100%);
+                opacity: 0;
+
+            }
+        }
+        
+ 
+    </style>
+    
+
+</head>
+<body>
+    <div class="contenedor">
+        <img src="luffy-one.gif" alt="gif" width="150" class="imagen-izquierda" /> 
+        <h1>Prueba del blog</h1> 
+        
+    </div>
+    
+    <header>
+    
+    
+    </header>
+    <section>
+        <article>
+            
+            <h2>titulodel</h2>
+           
+            
+            <p>descripcion</p>
+            <p>One Piece (ひとつなぎの大秘宝(ワンピース) Wan Pīsu) es un manga escrito y dibujado por Eiichiro Oda, que ilustra las aventuras de los protagonistas piratas, en concreto la tripulación pirata formada por Monkey D. Luffy, quienes están en la búsqueda de un tesoro llamado One Piece. Fue publicado por primera vez el 19 de julio de 1997 en la revista Shonen Jump.
+               La obra está dividida en dos partes: El mar de la supervivencia: Saga de los supernovatos (サバイバルの海 超新星編 Sabaibaru no Umi: Chōshinsei-hen), y El último mar: Saga del Nuevo Mundo (最後の海 新世界編 Saigo no Umi: Shinsekai-hen). 
+            </p>
+            <br>
+            <ul type="square" style="color: blueviolet;">
+                <li>Arco de Romance Dawn: (Manga: 1997) (Anime: 1999)</li>
+                <br>
+                <div class="info"> introduccion al Mundo</div>               
+                <li>Arco de la ciudad Orange: (Manga: 1997) (Anime: 1999)</li>
+                <li>Arco de Villa Syrup: (Manga: 1998) (Anime: 2000)</li>
+                <li>Arco del Baratie: (Manga: 1998) (Anime: 2000)</li>
+                <li>Arco de Arlong Park: (Manga: 1998-1999) (Anime: 2000)</li>
+                <li>Arco de Loguetown: (Manga: 1999) (Anime: 2000-2001)</li>
+            </ul>
+
+            
+        </article>
+    </section>
+    <footer></footer>
+
+</body>
+</html>
